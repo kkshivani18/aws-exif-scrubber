@@ -10,6 +10,9 @@ AWS Exif Scrubber is a serverless solution to automatically remove EXIF metadata
 - Containerized Lambda function using Docker.
 
 ## Architecture
+
+![Project Architecture](<./images/architecture.png>)  
+
 - **Input S3 Bucket**: Receives original images.
 - **Lambda Function**: Triggered by S3 events, processes images, removes EXIF, and saves to output bucket.
 - **Output S3 Bucket**: Stores cleaned images.
@@ -62,5 +65,6 @@ docker build -t aws-exif-scrubber .
 - Input: `aws-exif-scrubber-input`
 - Output: `aws-exif-scrubber-output`
 
+### Article on Medium
 
-
+[Checkout the article on Medium](https://medium.com/@kkrishnashivani18/lambda-to-silence-your-snitch-camera-0e482f8451da)
